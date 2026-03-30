@@ -9,7 +9,7 @@
     textarea
 </head>
 <body>
-    <div>
+    <header>
         <h1 id="titulo_principal"> O Senhor dos Anéis</h1>
         <h2 class="titulo_secundario">Uma das trilogias mais famosas do cinema
             pneumoultramic<wbr>roscopicossilicovu<wbr>lcanoconiótico</h2>
@@ -25,143 +25,146 @@
             <a href="Contato.html">Contato</a>
             <a href="Contato_teste.html">Teste</a>
         </nav>
-    </div>
-    <h2 class="titulo_secundario">Entre em contato:</h2>
-    <form action="processa.php" method="post">
-        <label for="nomepessoa" autocomplete="off">Nome:</label>
-        <input type="text" name="nomepessoa" id="nomepessoa"
-        minlength="3" maxlength="15" placeholder="Informe seu nome"
-        required><br><br>
+    </header>
+    <main>
+        <header><h2 class="titulo_secundario">Entre em contato:</h2></header>
+        <article>
+            <form action="processa.php" method="post">
+                <label for="nomepessoa" autocomplete="off">Nome:</label>
+                <input type="text" name="nomepessoa" id="nomepessoa"
+                minlength="3" maxlength="15" placeholder="Informe seu nome"
+                required><br><br>
 
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" required
-        placeholder="Informe seu email"><br><br>
-        
-        <label for="ano">Ano de nascimento:</label>
-        <input type="number" name="ano" id="ano" max="2026" min="1900"
-        placeholder="Informe ano de nascimento" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required
+                placeholder="Informe seu email"><br><br>
+                
+                <label for="ano">Ano de nascimento:</label>
+                <input type="number" name="ano" id="ano" max="2026" min="1900"
+                placeholder="Informe ano de nascimento" required><br><br>
 
-        <label for="telefone">Telefone:</label>
-        <input type="tel" name="telefone" id="telefone"
-        required placeholder="Informe seu telefone"><br><br>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" name="telefone" id="telefone"
+                required placeholder="Informe seu telefone"><br><br>
 
-        <label for="github">Informe seu github:</label>
-        <input type="url" name="github" id="github" required 
-        placeholder="Informe seu github"><br><br>
+                <label for="github">Informe seu github:</label>
+                <input type="url" name="github" id="github" required 
+                placeholder="Informe seu github"><br><br>
 
-        <label for="senha">Informe seu github:</label>
-        <input type="password" name="senha" id="senha" required 
-        placeholder="Informe sua senha"><br><br>
+                <label for="senha">Informe seu github:</label>
+                <input type="password" name="senha" id="senha" required 
+                placeholder="Informe sua senha"><br><br>
 
-        <label for="arquivo">Anexe um arquivo:</label>
-        <input type="file" id="arquivo" name="arquivo":><br><br>
+                <label for="arquivo">Anexe um arquivo:</label>
+                <input type="file" id="arquivo" name="arquivo":><br><br>
 
-        <label for="cor">Escolha uma cor:</label>
-        <input type="color" id="cor" name="cor"><br><br>
-        <fieldset>
-            <legend>Campos de tempo</legend>
-            <label for="data">Informe a data:</label>
-            <input type="date" id="data" name="data"><br><br>
+                <label for="cor">Escolha uma cor:</label>
+                <input type="color" id="cor" name="cor"><br><br>
+                <fieldset>
+                    <legend>Campos de tempo</legend>
+                    <label for="data">Informe a data:</label>
+                    <input type="date" id="data" name="data"><br><br>
 
-            <label for="mes">Informe o mês:</label>
-            <input type="month" name="mes" id="mes"><br><br>
+                    <label for="mes">Informe o mês:</label>
+                    <input type="month" name="mes" id="mes"><br><br>
 
-            <label for="semana">Informe a semana:</label>
-            <input type="week" name="semana" id="semana"><br><br>
+                    <label for="semana">Informe a semana:</label>
+                    <input type="week" name="semana" id="semana"><br><br>
 
-            <label for="hora">Informe a hora:</label>
-            <input type="time" name="hora" id="hora"><br><br>
+                    <label for="hora">Informe a hora:</label>
+                    <input type="time" name="hora" id="hora"><br><br>
 
-            <label for="datahora">Data e hora atual:</label>
-            <input type="datetime-local" name="datahora" id="datahora"><br>
-        </fieldset><br>
+                    <label for="datahora">Data e hora atual:</label>
+                    <input type="datetime-local" name="datahora" id="datahora"><br>
+                </fieldset><br>
 
-        <label for="pesquisa">Pesquisa:</label>
-        <input type="search" name="pesquisa" id="pesquisa"><br><br>
+                <label for="pesquisa">Pesquisa:</label>
+                <input type="search" name="pesquisa" id="pesquisa"><br><br>
 
-        <label for="descricao">Informe aqui o que você gosta nos filmes:</label><br>
-        <textarea cols="30" rows="10" name="descricao" id="descricao"></textarea><br><br>
+                <label for="descricao">Informe aqui o que você gosta nos filmes:</label><br>
+                <textarea cols="30" rows="10" name="descricao" id="descricao"></textarea><br><br>
 
-        <fieldset>
-            <legend>Qual seu filme favorito?</legend>
-            <label for="filme1"><input type="radio" name="filme" id="filme1"
-            value="Filme 1">Filme 1</label>
+                <fieldset>
+                    <legend>Qual seu filme favorito?</legend>
+                    <label for="filme1"><input type="radio" name="filme" id="filme1"
+                    value="Filme 1">Filme 1</label>
 
-            <label for="filme2"><input type="radio" name="filme" id="filme2"
-            value="Filme 2">Filme 2</label>
+                    <label for="filme2"><input type="radio" name="filme" id="filme2"
+                    value="Filme 2">Filme 2</label>
 
-            <label for="filme3"><input type="radio" name="filme" id="filme3"
-            value="Filme 3">Filme 3</label>
-        </fieldset><br><br>
+                    <label for="filme3"><input type="radio" name="filme" id="filme3"
+                    value="Filme 3">Filme 3</label>
+                </fieldset><br><br>
 
-        <select>
-            <option value="filme 1">Filme 1</option>
-            <option value="filme 2">Filme 2</option>
-            <option value="filme 3">Filme 3</option>
-        </select><br><br>
+                <select>
+                    <option value="filme 1">Filme 1</option>
+                    <option value="filme 2">Filme 2</option>
+                    <option value="filme 3">Filme 3</option>
+                </select><br><br>
 
-        <label for="nivel">Escolha o nível</label>
-        <input type="range" max="10" min="1" id="nivel" name="nivel"><br><br>
+                <label for="nivel">Escolha o nível</label>
+                <input type="range" max="10" min="1" id="nivel" name="nivel"><br><br>
 
-        <select id="lista suspensa" name="lista">
-            <optgroup label="Teste de legenda no combobox">
-                <option value="Teste 1">Teste 1</option>
-                <option value="Teste 2">Teste 2</option>
-                <option value="Teste 3">Teste 3</option>
-            </optgroup>
-            <optgroup label="Teste de legenda no combobox 2">
-                <option value="Teste 4">Teste 4</option>
-                <option value="Teste 5">Teste 5</option>
-                <option value="Teste 6">Teste 6</option>
-            </optgroup>
-        </select><br><br>
+                <select id="lista suspensa" name="lista">
+                    <optgroup label="Teste de legenda no combobox">
+                        <option value="Teste 1">Teste 1</option>
+                        <option value="Teste 2">Teste 2</option>
+                        <option value="Teste 3">Teste 3</option>
+                    </optgroup>
+                    <optgroup label="Teste de legenda no combobox 2">
+                        <option value="Teste 4">Teste 4</option>
+                        <option value="Teste 5">Teste 5</option>
+                        <option value="Teste 6">Teste 6</option>
+                    </optgroup>
+                </select><br><br>
 
-        <fieldset>
-            <legend>Desenvolvimento para internet</legend>
-            <label><input type="checkbox" name="php" value="php">PHP</label>
-            <label><input type="checkbox" name="html5" value="html5">HTML5</label>
-            <label><input type="checkbox" name="css" value="css">CSS</label>
-            <label><input type="checkbox" name="js" value="js">JAVASCRIPT</label>
-        </fieldset><br><br>
+                <fieldset>
+                    <legend>Desenvolvimento para internet</legend>
+                    <label><input type="checkbox" name="php" value="php">PHP</label>
+                    <label><input type="checkbox" name="html5" value="html5">HTML5</label>
+                    <label><input type="checkbox" name="css" value="css">CSS</label>
+                    <label><input type="checkbox" name="js" value="js">JAVASCRIPT</label>
+                </fieldset><br><br>
 
-        <!-- Datalist dos possíveis ganhadores da copa do mundo 26-->
-        <input type="text" id="busca_datalist">
-        <datalist id="paises">
-            <option>Brasil</option>
-            <option>França</option>
-            <option>Argentina</option>
-            <option>Alemanha</option>
-            <option>Inglaterra</option>
-            <option>Espanha</option>
-        </datalist><br><br>
+                <!-- Datalist dos possíveis ganhadores da copa do mundo 26-->
+                <input type="text" id="busca_datalist">
+                <datalist id="paises">
+                    <option>Brasil</option>
+                    <option>França</option>
+                    <option>Argentina</option>
+                    <option>Alemanha</option>
+                    <option>Inglaterra</option>
+                    <option>Espanha</option>
+                </datalist><br><br>
 
-        <audio controls muted autoplay loop>
-            <source src="audio/musica.mp3" type="audio/mp3">
-            Navegador não é compatível para executar áudio!
-        </audio><br><br>
+                <audio controls muted autoplay loop>
+                    <source src="audio/musica.mp3" type="audio/mp3">
+                    Navegador não é compatível para executar áudio!
+                </audio><br><br>
 
-        <video controls muted autoplay loop>
-            <source src="video/videoteste.mp4" type="video/mp4">
-            Navegador não é compatível para executar vídeo
-        </video><br><br>
+                <video controls muted autoplay loop>
+                    <source src="video/videoteste.mp4" type="video/mp4">
+                    Navegador não é compatível para executar vídeo
+                </video><br><br>
 
-        <iframe width="560" height="315" src="https://www.youtube.com/emb
-        ed/Sx86-18V3m8?si=EWkwlv_NgNlJp8O4" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy=
-        "strict-origin-when-cross-origin" allowfullscreen></iframe><br><br>
-        
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20462.
-        55388971112!2d-53.48787401375351!3d-24.95581545420862!2m3!1f0!2f0!3f0!3m2
-        !1i1024!2i768!4f13.1!3m3!1m2!1s0x94f3d15547bda185%3A0xd0cbc7fb7cc4a1a6!2s
-        UNIPAR%20-%20Universidade%20Paranaense%20-%20Cascavel!5e0!3m2!1spt-BR!2s
-        br!4v1774307450236!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;"
-        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/emb
+                ed/Sx86-18V3m8?si=EWkwlv_NgNlJp8O4" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy=
+                "strict-origin-when-cross-origin" allowfullscreen></iframe><br><br>
+                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20462.
+                55388971112!2d-53.48787401375351!3d-24.95581545420862!2m3!1f0!2f0!3f0!3m2
+                !1i1024!2i768!4f13.1!3m3!1m2!1s0x94f3d15547bda185%3A0xd0cbc7fb7cc4a1a6!2s
+                UNIPAR%20-%20Universidade%20Paranaense%20-%20Cascavel!5e0!3m2!1spt-BR!2s
+                br!4v1774307450236!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
 
-        <button type="reset">Limpar</button>
-        <button type="submit">Enviar</button>
-    </form>
-    
+                <button type="reset">Limpar</button>
+                <button type="submit">Enviar</button>
+            </form>
+        </article>
+    </main>
 </body>
 </html>
