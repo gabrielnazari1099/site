@@ -12,3 +12,18 @@
 .rodape{
     text-align: center;
 }
+body{
+    background-color: black; /*cor de fundo do elemento HTML*/
+    color: Rgb(255,255,255); /*cor do texto*/
+    font-family: "Roboto", sans-serif; /*tipo de fonte*/
+    font-size: 216px; /*tamanho da fonte*/
+    font-style: normal;/*estilo da fonte*/
+    line-height: 20px;/*espaçamento entre as linhas*/
+    font-weight: 400;/*espessura do texto - entre 100 e 900 ou bold e bolder*/
+    text-transform: none;/*capitalização da fonte - uppercase, lowercase, capitalize, none*/
+    /*text-decoration: overline, underline, double, dashed, dotted, wavy, none*/
+    word-spacing: none;/*espaçamento entre as palavras*/
+    letter-spacing: 2px;/*espaçamento entre as letras*/
+    text-indent: 20px;/*espaçamento de identação da primeira linha dos parágrafos*/
+    text-align: justify; /*alinhamento de texto - center, left, right, justify*/
+}
