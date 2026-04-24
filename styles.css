@@ -1,22 +1,20 @@
 #titulo_principal{
     background-color: #8B6F1E;
-    color:white
+    color:white;
 }
 .titulo_secundario{
     background-color: #2F4F2F;
-    color:white
-}
-#layout{
-    display: flex;
+    color:white;
 }
 .rodape{
     text-align: center;
 }
-body{
+#layout{
+    display: flex;
     background-color: black; /*cor de fundo do elemento HTML*/
     color: Rgb(255,255,255); /*cor do texto*/
     font-family: "Roboto", sans-serif; /*tipo de fonte*/
-    font-size: 216px; /*tamanho da fonte*/
+    font-size: 16px; /*tamanho da fonte*/
     font-style: normal;/*estilo da fonte*/
     line-height: 20px;/*espaçamento entre as linhas*/
     font-weight: 400;/*espessura do texto - entre 100 e 900 ou bold e bolder*/
@@ -26,4 +24,25 @@ body{
     letter-spacing: 2px;/*espaçamento entre as letras*/
     text-indent: 20px;/*espaçamento de identação da primeira linha dos parágrafos*/
     text-align: justify; /*alinhamento de texto - center, left, right, justify*/
+
+    /*border-style; Estilo da borda: solid, dashed, dotted, double, groove, inset, ridge, outset*/
+    /*border-width; Espessura da borda*/
+    /*border-color; Cor da borda*/
+    border: dashed 5px Rgb(52, 235, 164);/*Definir estilo, espessura e cor da borda em uma mesma linha*/
+    border-top: dotted 10px purple;
+    border-left: dotted 20px red;
+    border-bottom: solid 15px #fff000;
+    /*border right: estilizar o lado direito da borda*/ 
+    border-radius: 50px; /*Arredondar cantos da borda - px / %*/
+
+    margin: 20px; /*margem do lado de FORA da borda* - margin-right, left, top, bottom*/
+    padding: 20px; /*margem do lado de DENTRO da borda* - padding-right, left, top, bottom;*/
+}
+/*.teste_display{
+    background-color: orange;
+    display: inline-block;
+    width: 200px;
+}*/
+nav a{
+    text-decoration: none;
 }
