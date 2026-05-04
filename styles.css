@@ -2,13 +2,16 @@
     background-color: #8B6F1E;
     color:white;
 }
+
 .titulo_secundario{
     background-color: #2F4F2F;
     color:white;
 }
+
 .rodape{
     text-align: center;
 }
+
 #layout{
     display: flex;
     background-color: black; /*cor de fundo do elemento HTML*/
@@ -38,11 +41,75 @@
     margin: 20px; /*margem do lado de FORA da borda* - margin-right, left, top, bottom*/
     padding: 20px; /*margem do lado de DENTRO da borda* - padding-right, left, top, bottom;*/
 }
+
+nav a{
+    text-decoration: none;
+}
+
+#teste_estilo_ul{
+    list-style-type: disc;/*Define o estilo do marcador da UL: disc, circle e none*/
+}
+
+#teste_estilo_ol{
+    list-style-type: lo ;/*Define o estilo de marcadores da lista: decimal, lower roman, upper roman,
+    lower greek, upper greek, lower alpha, upper alpha*/
+    list-style-image: url('img/seta_direita_vermelha.png');
+}
+
+li{
+    border: orange solid 3px;
+    list-style-position: outside;/*Ele serve para dizer ao navegador se o marcador da lista faz
+    parte ou não do seu texto: inside e outside*/
+}
+
+#impacto{
+    background: url('img/senhordosaneis_fundo.jpg') no-repeat;
+    /*background-image: url('img/senhordosaneis_fundo.jpg'); Carrega imagem ao fundo do elemento HTML*/
+    /*background-repeat: no-repeat; Configura a forma como a imagem irá se repetirao fundo do elemento
+    HTML: no-repeat, repat-y, repeat-x, repeat*/
+    /*nackground-position: center; left, right, top, bottom, center
+    width: 2000px;
+    height: 1500px;*/
+    background-size: cover;/*Serve para definir como a imagem será exibida ao fundo do elemento HTML 
+    contain, cover, PX, % auto*/
+    background-attachment: fixed;/*Define como a imagem vai lidar com o scroll ao fundo do elemento
+    HTML: fixed, scroll*/
+    text-shadow: 3px 3px 2px red;/*define a sombra do texto*/
+    position: relative;
+}
+
+.noticia{
+    border: solid 3px white;
+    width: 200px;
+    position: fixed;/*Define o posicionamento atrás ou na frente dos elementos html: fixed, relative,
+    absolute e static*/
+    height: 70px;
+    overflow: visible;/*trata do comportamento de quando um texto passa das bordas de um elemento html:
+    visible, hidden, scroll, auto;*/
+    box-shadow: 3px 3px 3px 3px orange;/*Define a sombra do bloco*/
+}
+
+.um{
+    background-color: blue;
+    top: 0px;
+    left: 50px;
+    z-index: 3;/*Define a ordem de exposição dos termos*/
+}
+
+.dois{
+    background-color: red;
+    top: 100px;
+    left: 150px;
+}
+
+.tres{
+    background-color: green;
+    top: 200px;
+    left: 250px;
+}
+
 /*.teste_display{
     background-color: orange;
     display: inline-block;
     width: 200px;
 }*/
-nav a{
-    text-decoration: none;
-}
