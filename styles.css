@@ -166,6 +166,18 @@ hl{
     left: 250px;
 }
 
+#teste_gradiente{
+    /*background-image: linear-gradient(to right, blue, white); Linear-gradient (to right, to
+    left, to bottom, to top, xdeg), radial-gradient (circle). Posso definir o tamanho de cada cor usando
+    porcentagens*/
+    background-image: url("imagens/fundo_opacidade.jpg");
+    background-size: cover;
+    opacity: 0.5; /*Define a transparência de 0 a 1*/
+    height: 500px;
+    cursor: default; /*zoom-in, zoom-out, cell, crosshair, alias - altera o cursor do mouse em cima do
+    elemento HTML*/
+}
+
 /*.teste_display{
     background-color: orange;
     display: inline-block;
